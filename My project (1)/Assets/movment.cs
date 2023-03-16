@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class movment : MonoBehaviour
 {
-    // Update is called once per frame
-    void Update()
+    public Joystick Joystick;
+    public float speed;
+    private Rigidbody2D rb;
+    private void Start()
     {
-        if (Input.touchCount > 0)
+        rb = GetComponent<Rigidbody2D>();
+    }
+    void FixedUpdate()
+    {
+        if (Joystick.joystickVec.y != 0)
         {
-            Touch touch = Input.GetTouch(0);
-            Vector3 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
-            touchPosition.z = 0f;
-            transform.position = touchPosition;
+            rb.velocity = new Vector2(Joystick.joystickVec.x * speed, Joystick.joystickVec.y * speed);
+        }
+        else
+        {
+            rb.velocity = Vector2.zero;
         }
     }
+
 }

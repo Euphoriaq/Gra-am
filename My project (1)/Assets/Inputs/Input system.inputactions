@@ -1,0 +1,65 @@
+{
+    "name": "Input system",
+    "maps": [
+        {
+            "name": "Game",
+            "id": "eaa1e1e1-c198-44ec-88e3-f37ffba628bd",
+            "actions": [
+                {
+                    "name": "Walk",
+                    "type": "Value",
+                    "id": "65ccd947-8e26-4c24-b15e-2d1a532bde3b",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Interact",
+                    "type": "Button",
+                    "id": "2e189c14-9449-4f2d-ae89-e3878f294502",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "ba54ce1c-aa46-4ce8-b603-aa416eac5f91",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Walk",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3df6420e-1317-4cb4-aaf6-55b7ff69e2d6",
+                    "path": "<AndroidGamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Walk",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9bf0d0d8-a31b-4358-acac-a43be7904b69",
+                    "path": "<AndroidGamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
